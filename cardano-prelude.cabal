@@ -22,6 +22,7 @@ library
 
   exposed-modules:
                        Cardano.Prelude
+                       Cardano.Prelude.CanonicalExamples.Orphans
                        Data.FingerTree.Strict
                        Data.Sequence.Strict
                        Data.Semigroup.Action
@@ -29,6 +30,7 @@ library
   other-modules:
                        Cardano.Prelude.Base
                        Cardano.Prelude.Base16
+                       Cardano.Prelude.CanonicalExamples.Class
                        Cardano.Prelude.Error
                        Cardano.Prelude.Formatting
                        Cardano.Prelude.GHC.Heap
@@ -56,6 +58,7 @@ library
                      , ghc-prim
                      , hashable
                      , integer-gmp
+                     , memory
                      , mtl
                      , nonempty-containers    >= 0.3.4
                      , protolude
@@ -96,6 +99,7 @@ test-suite cardano-prelude-test
   other-modules:
                        Test.Cardano.Prelude
                        Test.Cardano.Prelude.Base16
+                       Test.Cardano.Prelude.CanonicalExamples
                        Test.Cardano.Prelude.Gen
                        Test.Cardano.Prelude.GHC.Heap.NormalForm
                        Test.Cardano.Prelude.GHC.Heap.NormalForm.Classy
